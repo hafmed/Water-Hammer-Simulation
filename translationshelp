@@ -1,0 +1,7 @@
+ /home/hafmed/Qt/6.9.2/gcc_64/bin/
+
+
+ ./lupdate /home/hafmed/Documents/25-26/Water-Hammer-Simulation/translations/ -ts /home/hafmed/Documents/25-26/Water-Hammer-Simulation/translations/qt_en.ts
+
+
+   ./lrelease /home/hafmed/Documents/25-26/Water-Hammer-Simulation/translations/qt_en.ts -qm /home/hafmed/Documents/25-26/Water-Hammer-Simulation/translations/qt_en.qm

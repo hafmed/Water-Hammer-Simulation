@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/log_universite_SAIDA.png</file>
+        <file>icons/water_hammer_simulation.ico</file>
+        <file>icons/water_hammer_simulation_Reservoir_ang.png</file>
+        <file>icons/water_hammer_simulation_Reservoir_fr.png</file>
+        <file>icons/help.png</file>
+        <file>icons/warning.png</file>
+        <file>icons/chemineeequilibre.png</file>
+    </qresource>
+</RCC>

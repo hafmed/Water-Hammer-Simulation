@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Water Hammer Simulation
+Comment=With different numerical methods this application simulate the water hammer phenomenon.
+Categories=Education;Science;Utility;
+Icon=io.github.hafmed.Water-Hammer-Simulation
+Exec=water_hammer_simulation
+Terminal=false
+Keywords=Simulation;Flow;Water;Hammer;Hydraulics;numerical method;Computational;calcul;Pressure;Cavitation;surge tank;
+Keywords[fr]=Simulation;Ecoulement;Eau;Coup de Bélier;Hydraulique;méthode numérique;calcul;Pression;Cavitation;cheminée d'équilibre;
+Name[fr]=Water Hammer Simulation
+Comment[fr]=Avec différentes méthodes numériques, cette application simule le phénomène de coup de Bélier.

@@ -1,0 +1,91 @@
+cmake_minimum_required(VERSION 3.19)
+project(water_hammer_simulation LANGUAGES CXX)
+
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets PrintSupport LinguistTools)
+
+set(APP_VERSION 4.7.5)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+configure_file(version.h.in version.h)
+
+qt_standard_project_setup()
+
+qt_add_executable(water_hammer_simulation
+    WIN32 MACOSX_BUNDLE
+    main.cpp
+    water_hammer_simulation.cpp
+    water_hammer_simulation.h
+    water_hammer_simulation.ui
+    qcustomplot.h
+    qcustomplot.cpp
+    qtresource.qrc
+    translations.qrc
+    constants.h
+    version.h.in
+    io.github.hafmed.Water-Hammer-Simulation.desktop io.github.hafmed.Water-Hammer-Simulation.metainfo.xml io.github.hafmed.Water-Hammer-Simulation.png io.github.hafmed.Water-Hammer-Simulation.yaml io.github.hafmed.Water-Hammer-Simulation io.github.hafmed.Water-Hammer-Simulation.ico io.github.hafmed.Water-Hammer-Simulation.svg
+)
+
+# Include QCustomPlot header directory
+target_include_directories(water_hammer_simulation PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR} # Assuming qcustomplot.h is in the same directory as CMakeLists.txt
+)
+
+set_source_files_properties(./translations/qt_en.ts
+    PROPERTIES OUTPUT_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/translations")
+# qt_add_translations(water_hammer_simulation)
+
+qt_standard_project_setup(
+    I18N_SOURCE_LANGUAGE fr         # optional - this is the default
+    I18N_TRANSLATED_LANGUAGES en
+)
+
+qt_add_translations(
+    TARGETS water_hammer_simulation
+    TS_FILES ./translations/qt_en.ts
+)
+
+# qt_add_translations(
+#     TARGETS water_hammer_simulation
+#     TS_FILES ./translations/qt_en.ts
+# )
+
+target_link_libraries(water_hammer_simulation
+    PRIVATE
+        Qt::Core
+        Qt::Widgets
+        Qt::PrintSupport # Required for printing/exporting plots
+)
+
+include(GNUInstallDirs)
+
+install(TARGETS water_hammer_simulation
+    BUNDLE  DESTINATION .
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
+# qt_generate_deploy_app_script(
+#     TARGET water_hammer_simulation
+#     OUTPUT_SCRIPT deploy_script
+#     NO_UNSUPPORTED_PLATFORM_ERROR
+# )
+# install(SCRIPT ${deploy_script})
+
+#install(FILES ${PROJECT_SOURCE_DIR}/io.github.hafmed.Water-Hammer-Simulation.metainfo.xml DESTINATION $ENV{HOME}/.local/app/share/metainfo/io.github.hafmed.Water-Hammer-Simulation.metainfo.xml)
+
+install(FILES "${PROJECT_SOURCE_DIR}/io.github.hafmed.Water-Hammer-Simulation.metainfo.xml"
+        DESTINATION "$ENV{HOME}/.local/app/share/metainfo")
+install(FILES "${PROJECT_SOURCE_DIR}/io.github.hafmed.Water-Hammer-Simulation.desktop"
+        DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications")
+install(FILES "${PROJECT_SOURCE_DIR}/io.github.hafmed.Water-Hammer-Simulation.metainfo.xml"
+        DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo")
+install(FILES "${PROJECT_SOURCE_DIR}/io.github.hafmed.Water-Hammer-Simulation.png"
+        DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps")
