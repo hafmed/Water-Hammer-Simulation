@@ -2065,7 +2065,7 @@ CFL&gt;1 donne &quot;Instabilité numérique de la méthode&quot;.</string>
   <customwidget>
    <class>QCustomPlot</class>
    <extends>QWidget</extends>
-   <header>qcustomplot/qcustomplot.h</header>
+   <header>qcustomplot.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
