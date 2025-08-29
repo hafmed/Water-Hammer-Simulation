@@ -63,7 +63,7 @@
             <li>Export results as tables;</li>
             <li>An animation is produced that shows the variation in pressure at the valve;</li>
             <li>Calculate the error between the simulation results and the theoretical values ​​at the valve level;</li>
-            <li>Calculate the maximum water height in surge tank;</li>
+            <li>Calculate the maximum water height in the Surge Tank;</li>
             <li>English and French GUI;</li>
             <li>.....</li>
             <li xml:lang="fr">Calculer la pression, la charge hydraulique et la vitesse en fonction du temps dans une configuration simple ;</li>
@@ -101,23 +101,23 @@
         <screenshots>
             <screenshot type="default">
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_1.png</image>
-                <caption>Main window (Channel configuration)</caption>
-                <caption xml:lang="fr">Fenêtre principale (Paramètres du canal)</caption>
+                <caption>Main window (Simulation parameters)</caption>
+                <caption xml:lang="fr">Fenêtre principale (Paramètres de simulation)</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_2.png</image>
-                <caption>Choice of method of simulation and boundary conditions</caption>
-                <caption xml:lang="fr">Choix de la méthode de simulation et conditions aux limites.</caption>
+                <caption>Physical configuration</caption>
+                <caption xml:lang="fr">Configuration physique</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_3.png</image>
-                <caption>Results of the simulation in a table and plot in graphics</caption>
-                <caption xml:lang="fr">Les résultats de la simulation sont présentés dans un tableau et illustrés dans un graphique.</caption>
+                <caption>The simulation results are presented in table form and as a graph. The table can be exported</caption>
+                <caption xml:lang="fr">Les résultats de la simulation sont présentés dans un tableau et illustrés dans un graphique</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_4.png</image>
-                <caption>Physical configuration</caption>
-                <caption xml:lang="fr">Configuration physique.</caption>
+                <caption>Calculation of the maximum height of water in the surge tank</caption>
+                <caption xml:lang="fr">Calcule de la hauteur maximale de l’eau dans un cheminée d'équilibre</caption>
             </screenshot>
         </screenshots>
     </component>
