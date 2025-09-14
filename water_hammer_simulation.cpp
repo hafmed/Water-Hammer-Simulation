@@ -139,9 +139,9 @@ void water_hammer_simulation::readData()
     h0=ui->lineEdit_Ho->value(); //218.07;       //La hauteur d'eau dans le réservoir
     tmax=ui->doubleSpinBox_tempsSimulation->value(); //20        //Temps total de simulation
     tclose=ui->doubleSpinBox_Tclose->value(); //10;        //Temps de fermeture de la vanne
-    Z1=0;      //ui->lineEdit_Z1->value();
-    Z2=0;      //ui->lineEdit_Z2->value();
-    // theta=(Z2-Z1)/L;
+    Z1=ui->lineEdit_Z1->value();
+    Z2=ui->lineEdit_Z2->value();
+    theta=(Z2-Z1)/L;
     dZ=(Z2-Z1)/nparts;
     dx=L/nparts;
 
