@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=water-hammer-simulation
 Comment=Application to calculate Water HAMMER phenomen.
+Comment[ru]=Приложение для расчета гидроудара.
 Exec=water-hammer-simulation
 Icon=default
 Terminal=false
