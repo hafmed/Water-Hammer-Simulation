@@ -4,6 +4,7 @@
     <name>Water Hammer Simulation</name>
     <summary>This application uses different numerical methods to simulate the Water Hammer phenomenon.</summary>
     <summary xml:lang="fr">Cette application utilise différentes méthodes numériques pour simuler le phénomène de coup de Bélier.</summary>
+    <summary xml:lang="ru">Это приложение использует различные цифровые методы для имитации явления гидроудара.</summary>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
     <supports>
@@ -19,26 +20,37 @@
     <keywords>
         <keyword>Simulation</keyword>
         <keyword xml:lang="fr">Simulation</keyword>
+        <keyword xml:lang="ru">симулятор</keyword>
         <keyword>Flow</keyword>
         <keyword xml:lang="fr">Ecoulement</keyword>
+        <keyword xml:lang="ru">поток</keyword>
         <keyword>Water</keyword>
         <keyword xml:lang="fr">Eau</keyword>
+        <keyword xml:lang="ru">вода</keyword>
         <keyword>Hammer</keyword>
         <keyword xml:lang="fr">Coup de Bélier</keyword>
+        <keyword xml:lang="ru">гидроудар</keyword>
         <keyword>Hydraulics</keyword>
         <keyword xml:lang="fr">Hydraulique</keyword>
+        <keyword xml:lang="ru">гидравлика</keyword>
         <keyword>numerical method</keyword>
         <keyword xml:lang="fr">méthode numérique</keyword>
+        <keyword xml:lang="ru">цифровой метод</keyword>
         <keyword>Computational</keyword>
         <keyword xml:lang="fr">Calcul informatique</keyword>
+        <keyword xml:lang="ru">вычисление</keyword>
         <keyword>calcul</keyword>
         <keyword xml:lang="fr">calcul</keyword>
+        <keyword xml:lang="ru">расчёт</keyword>
         <keyword>Pressure</keyword>
         <keyword xml:lang="fr">Pression</keyword>
+        <keyword xml:lang="ru">давление</keyword>
         <keyword>Cavitation</keyword>
         <keyword xml:lang="fr">Cavitation</keyword>
+        <keyword xml:lang="ru">кавитация</keyword>
         <keyword>surge tank</keyword>
         <keyword xml:lang="fr">cheminée d'équilibre</keyword>
+        <keyword xml:lang="ru">расширительный бак</keyword>
         <keyword>Qt</keyword>
         <keyword xml:lang="fr">Qt</keyword>
         <keyword>c++</keyword>
@@ -51,11 +63,17 @@
         <p xml:lang="fr">
             Cette application utilise différentes méthodes numériques pour simuler le phénomène de coup de Bélier.
         </p>
+        <p xml:lang="ru">
+            Это приложение использует различные цифровые методы для имитации явления гидроудара.
+        </p>
         <p>
             Features:
         </p>
         <p xml:lang="fr">
             Caractéristiques :
+        </p>
+        <p xml:lang="ru">
+            Особенности :
         </p>
         <ul>
             <li>Calculate pressure, hydraulic head and velocity as function of time in a simple configuration;</li>
@@ -72,6 +90,13 @@
             <li xml:lang="fr">Calculer l'erreur entre les resultats de la simulation et les valeurs théoriques au niveau de la vanne ;</li>
             <li xml:lang="fr">Calculer la hauteur d'eau maximale dans un cheminée d'équilibre ;</li>
             <li xml:lang="fr">Interface en Français et en Anglais ;</li>
+            <li xml:lang="ru">Расчёт давления, гидравлический напора и скорости в зависимости от времени в простой конфигурации;</li>
+            <li xml:lang="ru">Использование различных цифровых методов;</li>
+            <li xml:lang="ru">Экспорт результатов в виде таблиц;</li>
+            <li xml:lang="ru">Создается анимация, показывающая изменение давления на клапане;</li>
+            <li xml:lang="ru">Рассчёт погрешности между результатами моделирования и теоретическими значениями на уровне клапана;</li>
+            <li xml:lang="ru">Рассчёт максимальной высоты воды в расширительном бачке;</li>
+            <li xml:lang="ru">Интерфейс на английском, французском и русском языке;</li>
         </ul>
     </description>
     <launchable type="desktop-id">io.github.hafmed.Water-Hammer-Simulation.desktop</launchable>
@@ -101,21 +126,25 @@
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_1.png</image>
                 <caption>Main window (Simulation parameters)</caption>
                 <caption xml:lang="fr">Fenêtre principale (Paramètres de simulation)</caption>
+                <caption xml:lang="ru">Главное окно (Параметры моделирования)</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_2.png</image>
                 <caption>Physical configuration</caption>
                 <caption xml:lang="fr">Configuration physique</caption>
+                <caption xml:lang="ru">Физическая конфигурация</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_3.png</image>
                 <caption>The simulation results are presented in table form and as a graph. The table can be exported</caption>
                 <caption xml:lang="fr">Les résultats de la simulation sont présentés dans un tableau et illustrés dans un graphique</caption>
+                <caption xml:lang="ru">Результаты моделирования в виде таблицы и графика. Таблицу можно экспортировать.</caption>
             </screenshot>
             <screenshot>
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_4.png</image>
                 <caption>Calculation of the maximum height of water in the surge tank</caption>
                 <caption xml:lang="fr">Calcule de la hauteur maximale de l’eau dans un cheminée d'équilibre</caption>
+                <caption xml:lang="ru">Расчёт максимальной высоты воды в гидроаккумулирующей камере</caption>
             </screenshot>
         </screenshots>
     </component>
