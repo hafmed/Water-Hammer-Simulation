@@ -3,7 +3,7 @@ project(water_hammer_simulation LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets PrintSupport)
 
-set(APP_VERSION 4.7.5)
+set(APP_VERSION 4.8.1)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
