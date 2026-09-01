@@ -1386,7 +1386,7 @@ void water_hammer_simulation::about()
     msgBox.setTextFormat(Qt::RichText);
     QString pubabout=tr("Avec différentes méthodes numériques cette application simule le phénomène de coup de Bélier ; \n")+
             "Ver. "+ APP_VERSION +tr(" sur Linux, Windows et Android ; \n")+
-                       "29-08-2025. "+"\n"+
+                       "01-09-2026. "+"\n"+
             /////"("+ QString("%1").arg(BLD_DATE) +tr(") ; ")+
             "\n HAFIANE Mohamed ; e-mail"+ tr(" pour (feedback) :")+" <a href=\"mailto:thakir.dz@gmail.com?"+
             "subject=About%20Application%20water_hammer_simulation\">thakir.dz@gmail.com</a>"+
