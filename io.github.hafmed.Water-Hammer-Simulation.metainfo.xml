@@ -6,6 +6,9 @@
     <summary xml:lang="fr">Cette application utilise différentes méthodes numériques pour simuler le phénomène de coup de Bélier.</summary>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
+    <requires>
+      <display_length compare="ge">360</display_length>
+    </requires>
     <supports>
         <control>pointing</control>
         <control>keyboard</control>
@@ -44,6 +47,10 @@
         <keyword>c++</keyword>
         <keyword xml:lang="fr">c++</keyword>
     </keywords>
+    <branding>
+    <color type="primary" scheme_preference="light">#f6d32d</color>
+    <color type="primary" scheme_preference="dark">#9f72b3</color>
+    </branding>
     <description>
         <p>
             This application uses different numerical methods to simulate the Water Hammer phenomenon.
@@ -76,7 +83,18 @@
     </description>
     <launchable type="desktop-id">io.github.hafmed.Water-Hammer-Simulation.desktop</launchable>
     <releases>
-        <release version="4.7.5" date="2025-09-10">
+        <release type="stable" version="4.8.1" date="2026-09-01">
+            <url type="details">https://sites.google.com/site/courshaf/</url>
+            <description>
+                <p>Latest stable release</p>
+                <p xml:lang="fr">Dernière version stable</p>
+                <ul>
+                    <li>Minor bug fixes</li>
+                    <li xml:lang="fr">Corrections de bugs mineurs</li>
+                </ul>
+            </description>
+        </release>
+        <release type="stable" version="4.7.5" date="2025-09-10">
             <url type="details">https://sites.google.com/site/courshaf/</url>
             <description>
                 <p>First release on Flathub</p>
@@ -96,6 +114,7 @@
         </update_contact>
         <url type="homepage">https://sites.google.com/site/courshaf/</url>
         <url type="bugtracker">https://github.com/hafmed/Water-Hammer-Simulation/issues</url>
+        <url type="vcs-browser">https://github.com/hafmed/Water-Hammer-Simulation</url>
         <screenshots>
             <screenshot type="default">
                 <image>https://raw.githubusercontent.com/hafmed/Water-Hammer-Simulation/refs/heads/main/Screenshot/Screenshot_1.png</image>
